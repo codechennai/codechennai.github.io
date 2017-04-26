@@ -1,0 +1,59 @@
+body {
+	background: #607D8B;
+}
+ 
+.row {
+	width: 90%;
+}
+
+
+.navbar {
+	background-color: #CFD8DC;	
+	z-index: 998;
+}
+
+.container-fluid a{
+	color: #212121;
+}
+
+.display {
+	color: #212121;
+	font-family: serif;
+	font-size: 50px;
+}
+
+.subdisp {
+	color: #FFFFFF;
+	font-size: 20px;
+}
+
+.roletext {
+	color: #212122;
+	font-size: 20px;
+}
+
+.roles {
+	color: #000000;
+	font-size: 18px;
+	width: 55%;
+}
+
+.roles .col-xs-2{
+	padding: none;
+}
+
+.btn {
+	background-color: #8eaf9d;
+	opacity: 0.5;
+	padding: none;
+	border: none;
+}
+
+.interactive-display .btn {
+	font-size: 25px;
+}
+
+.otherdisp{
+	color: #212121;
+	font-size: 20px;
+}

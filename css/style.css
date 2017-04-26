@@ -1,59 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Handlee');
+
+@font-face {
+    font-family: 'prismaregular';
+    src: url('../webfont/prisma-webfont.eot');
+    src: url('../webfont/prisma-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfont/prisma-webfont.woff2') format('woff2'),
+         url('../webfont/prisma-webfont.woff') format('woff'),
+         url('../webfont/prisma-webfont.ttf') format('truetype'),
+         url('../webfont/prisma-webfont.svg#prismaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
-	background: #607D8B;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
 }
- 
-.row {
-	width: 90%;
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.webfont{
+	font-family: 'prismaregular', Arial, sans-serif;
+    font-size: 3em;
+    
+}
+
+.st-content{
+    
+}
+
+.default-nav{
+    background-color: rgba(0, 0, 0, 0.2);
+background: rgba(0, 0, 0, 0.2);
+color: rgba(0, 0, 0, 0.2);
+}
+
+.list-group-item:before {
+  content: '\f00c';
+  font-family: 'FontAwesome';
+  float: left;
+  margin-left: -1.5em;
+  color: #fff;
+  padding: 0px 8px 0px 15px;
+}
+
+.largeicon{
+    font-size: 10em !important;
+}
+
+#section0{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+/*    background: #3949AB;*/
+    color: white !important;
+}
+
+
+.social > a > i {
+    margin: 2em 2em 0em 2em;
+    color: white;
 }
 
 
-.navbar {
-	background-color: #CFD8DC;	
-	z-index: 998;
+#section1{
+    padding-top: 70px; 
+/*    background-color: #FFB300;*/
+    width: 100%;
+    height: 100%;
+    color: #000 !important;
 }
 
-.container-fluid a{
-	color: #212121;
+
+#section2{
+    /*padding-top: 70px; */
+/*    background-color: #1BAEE4;*/
+    width: 100%;
+    height: 100%;
+    color: #000 !important;
 }
 
-.display {
-	color: #212121;
-	font-family: serif;
-	font-size: 50px;
+.list-group{
+    font-family: 'Handlee', cursive;
+    padding-top: 10px;
+    color: #fff;
 }
 
-.subdisp {
-	color: #FFFFFF;
-	font-size: 20px;
+.list-group-item{
+    background-color: #111;
+    height:40px;
 }
 
-.roletext {
-	color: #212122;
-	font-size: 20px;
+#section3{
+    padding-top: 70px; 
+/*    background-color: #F35F72;*/
+    width: 100%;
+    height: 100%;
+    color: #fff !important;
 }
 
-.roles {
-	color: #000000;
-	font-size: 18px;
-	width: 55%;
+#section4{
+    padding-top: 70px; 
+/*    background-color: #435196;*/
+    width: 100%;
+    height: 100%;
+    color: #fff !important;
 }
 
-.roles .col-xs-2{
-	padding: none;
+#section5{
+    padding-top: 70px; 
+/*    background-color: #00796B;*/
+    width: 100%;
+    height: 100%;
+    color: #fff !important;
 }
 
-.btn {
-	background-color: #8eaf9d;
-	opacity: 0.5;
-	padding: none;
-	border: none;
+#section6{
+    padding-top: 70px; 
+/*    background-color: #795548;*/
+    width: 100%;
+    height: 100%;
+    color: #fff !important;
 }
 
-.interactive-display .btn {
-	font-size: 25px;
+.card {
+    color: #000;
 }
 
-.otherdisp{
-	color: #212121;
-	font-size: 20px;
+#section7{
+    padding-top: 70px; 
+/*    background-color: #607D8B;*/
+    width: 100%;
+    height: 100%;
+    color: #fff !important;
+}
+
+#section8{
+/*    padding-top: 70px; */
+/*    background-color: #673AB7;*/
+    width: 100%;
+    height: 100%;
+    color: #fff !important;
+}
+
+#section9{
+/*    padding-top: 70px; */
+/*    background-color: #b71c1c;*/
+    width: 100%;
+    height: 100%;
+    color: #fff !important;
 }

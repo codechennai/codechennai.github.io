@@ -1,87 +1,390 @@
+<!--Author: AsathalMannan-->
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:fb="http://ogp.me/ns/fb#">
-<head>
-	<meta property="og:image" content="https://codechennai.github.io/site/content/background.jpg" />
-	<title>Code Chennai</title>	
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- <link href="styles/style.css" rel="stylesheet" /> -->
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CODE CHENNAI</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="https://codechennai.github.io/site/css/style.css" rel="stylesheet" type="text/css"/>
-    <script src="https://codechennai.github.io/site/js/script.js"></script>
-</head>
-<body onload="change('title')">
-	<img src="https://codechennai.github.io/site/content/background.jpg" hidden="true"/>
-	<div class="navbar">	
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#" onclick="change('title')">Code Chennai</a>
-			<ul class="nav navbar-nav">
-				<li class="active">
-					<a href="#" onclick="change('about')">About Us</a>
-				</li>
-				<li>
-					<a href="#" onclick="change('student')">Students</a>
-				</li>
-				<li>
-					<a href="#" onclick="change('VIP')">VIPs</a>
-				</li>
-				<li>
-					<a href="#" onclick="change('conductor')">Freelancers / Employee</a>
-				</li>
-				<li>
-					<a href="#" onclick="change('startup')">Hunt Talent!</a>
-				</li>
-				<li>
-					<a href="#" onclick="change('courses')">Courses</a>
-				</li>
-				<li>
-					<a href="#" onclick="change('college')">Colleges</a>
-				</li>
-				<li>
-					<a href="#" onclick="change('event')">Upcoming Events</a>
-				</li>
-				<li>
-					<a href="#" onclick="change('altrus')">Free Classes</a>
-				</li>
-			</ul>
-		</div>
-	</div>	
-	<center>
-		<div class="row displayContent">
-			
-		</div>
-		
-		<!-- <br/><br/><br/>
-		<div class="row interactive-display">
-			<div class="row">
-				<button type="button" class="btn btn-default" onclick="start()">Start</button>
-			</div>
-		</div>
-		<div class="row role-display" hidden="true">
-			<div class="row roletext" align="center">
-				Who are you?
-			</div><br/><br/>
-			<div class="row roles" align="center">
-				<div class="col-xs-2 col-xs-offset-1">
-					<button type="button" class="btn">Student</button> 
-				</div>
-				<div class="col-xs-2">
-					<button type="button" class="btn">Graduate</button> 
-				</div>
-				<div class="col-xs-2">
-					<button type="button" class="btn">Employee</button> 
-				</div>
-				<div class="col-xs-2">
-					<button type="button" class="btn">Freelancer</button> 
-				</div>
-				<div class="col-xs-2">
-					<button type="button" class="btn">Startup</button> 
-				</div>
-			</div>
-		</div> -->
-	</center>
-	
-</body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.css" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  </head>
+  <body data-spy="scroll"> 
+
+    <nav id="navthing" class="navbar navbar-toggleable-md navbar-inverse fixed-top default-nav">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#info" data-toggle="tooltip" data-placement="bottom" title="Click Me !!"><span data-toggle="modal" data-target="#knowme"><strong>CODE </strong>CHENNAI</span></a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav" id="menu">
+          <li class="nav-item"  data-menuanchor="home">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item" data-menuanchor="about">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item" data-menuanchor="students">
+            <a class="nav-link" href="#students">Students</a>
+          </li>
+          <li class="nav-item" data-menuanchor="vips">
+            <a class="nav-link" href="#vips">VIPs</a>
+          </li>
+          <li class="nav-item" data-menuanchor="freelanc">
+            <a class="nav-link" href="#freelanc">Freelancers / Employee</a>
+          </li>
+          <li class="nav-item" data-menuanchor="hunt">
+            <a class="nav-link" href="#hunt">Hunt Talent !</a>
+          </li>
+          <li class="nav-item" data-menuanchor="course">
+            <a class="nav-link" href="#course">Courses</a>
+          </li>
+          <li class="nav-item" data-menuanchor="college">
+            <a class="nav-link" href="#college">Colleges</a>
+          </li>
+          <li class="nav-item" data-menuanchor="upeve">
+            <a class="nav-link" href="#upeve">Upcoming Events</a>
+          </li>
+          <li class="nav-item" data-menuanchor="free">
+            <a class="nav-link" href="#free">Free Classes</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+<div id="fullpage">
+
+    <section id="section0" class="animated fadeIn page-sz container-fluid st-content section active">
+      <div class="row justify-content-md-center">
+      <div class="col-12">
+        <h1><span class="webfont">CODE <br>CHENNAI</span></h1>
+        <p>Increasing the coding population of chennai</p>
+      </div>
+      <div class="col-4 social">
+          <a href="https://www.facebook.com/chennaicodes/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/CodeChennai"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="mailto:chennaicodes@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+      </div>
+      </div>
+    </section>
+      
+    <section id="section1" class="animated page-sz container st-content section">
+      <div class="row">
+      <div class="col-12">
+        <h1 class="webfont">ABOUT US</h1>
+      </div>
+      <div class="col-lg-6">
+        <p class="text-justify"><strong>Code Chennai</strong> is a new venture in the famous Chennai Maanagaram. You can learn to code without emptying your pockets here. The course will be a fun one where you can get your hands dirty by working on real life examples and cool projects. The focus of our venture is to equip you with the best possible in technology.</p>
+      </div>
+      <div class="col-lg-6">
+        <p class="text-justify"><strong>Employability</strong> has been always an issue in India and startups and large organizations face a large gap in skillset and have to incur the cost of training. It is a well known fact that if a person knows about software or programming, their chance of landing a job increases. Code Chennai also offers you the benefit of getting placed in top notch startups as you grow!</p>
+      </div>
+      </div>
+    </section>
+
+    <section id="section2" class="animated page-sz container st-content section">
+      <div class="row">
+      <div class="col-12">
+        <h1 class="webfont">Students</h1>
+      </div>
+      <div class="col-12">
+        <p class="text-justify">Student life is the best period to learn things with freedom. Every engineering student (Any student) spends 3-4 years of their life studying theory and concepts with almost no practical knowledge. Learning to code while you are still a student is the best thing you can do to yourself.</p>
+        <strong>What are you waiting for? Enroll <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYGKAhooI92zTL9yMblQ9z5SHB06MAh8Iftwtvn9NbDd-c6Q/viewform">here</a></strong>
+      </div>
+      <div class="col-6">
+        <ul class="list-group">
+          <li class="list-group-item">There will be 2-3 classes per week and this means a flexible schedule.</li>
+          <li class="list-group-item">No rigid syllabus which means exploration is infinite!</li>
+          <li class="list-group-item">Bilingual Classes (Tamil & English)</li>
+          <li class="list-group-item">Become an intern in cool startups!</li>
+          <li class="list-group-item">Constant update of Current Trends and Technologies.</li>
+          <li class="list-group-item">Learn about competitions and Hackathons and win cool prizes.</li>
+          </ul>
+      </div>
+      <div class="col-6">
+        <ul class="list-group">
+          <li class="list-group-item">Join as a group and avail discounts.</li>
+          <li class="list-group-item">Work on real world examples and cool projects.</li>
+          <li class="list-group-item">Learn in a community environment</li>
+          <li class="list-group-item">Have a dream company? Get specific training!</li>
+          <li class="list-group-item">Get mentored from time to time by awesome people!</li>
+          <li class="list-group-item">Move in a direction of technology you desire.</li>
+        </ul>
+      </div>
+      </div>
+    </section>
+
+    <section id="section3" class="animated page-sz container st-content section">
+      <div class="row">
+      <div class="col-12">
+        <h1 class="webfont">VIPs</h1>
+      </div>
+      <div class="col-12">
+        <p class="text-justify">Done with Engineering or any degree and still a VIP (Vela Illa Pattadhari)? It is said that most of the graduates are unemployable and a recent study shows that about <strong>92%</strong> of Computer Science Engineering graduates are not fit for programming! Code Chennai helps you to increase your skills to the MAX and land at a great workplace!</p>
+        <strong>Do you think that learning to code will land you in a job? Then Click <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYGKAhooI92zTL9yMblQ9z5SHB06MAh8Iftwtvn9NbDd-c6Q/viewform">here</a></strong>
+      </div>
+      
+        <div class="col-6">
+        <ul class="list-group">
+          <li class="list-group-item">There will be 2-3 classes per week and this means a flexible schedule.</li>
+          <li class="list-group-item">No rigid syllabus which means exploration is infinite!</li>
+          <li class="list-group-item">Bilingual Classes (Tamil & English)</li>
+          <li class="list-group-item">Get full-time offers from cool startups!</li>
+          <li class="list-group-item">Update on Current Trends and Technologies.</li>
+          <li class="list-group-item">Learn about competitions and Hackathons and win cool prizes.</li>
+          <li class="list-group-item">Join as a group and avail discounts.</li>
+          </ul>
+      </div>
+      <div class="col-lg-6">
+        <ul class="list-group">
+          <li class="list-group-item">Work on real world examples and cool projects.</li>
+          <li class="list-group-item">Learn in a community based environment</li>
+          <li class="list-group-item">Have a dream company? Get specific training!</li>
+          <li class="list-group-item">Get sneak peeks of workplace culture in startups</li>
+          <li class="list-group-item">Get mentored from time to time by awesome people!</li>
+          <li class="list-group-item">Move in a direction of technology you desire.</li>
+        </ul>
+      </div>
+      
+      </div>
+    </section>
+
+    <section id="section4" class="animated page-sz container st-content section">
+      <div class="row">
+      <div class="col-12">
+        <h1 class="webfont">Freelancer</h1>
+      </div>
+      <div class="col-lg-12">
+        <p class="text-justify"><strong>Do you know to code?</strong> Are you an employee looking to do something worthwile during weekends or day off? Are you a freelancer and want to spend a couple of hours in teaching and earn something? Come be a part of Code Chennai by joining hands to increase the coding population in Namma Singara Chennai. Join us in the journey of improving lives !!!</p>
+        <strong>Code Conductor is the title we give to awesome people like you. Become a Code Conductor <a href="https://docs.google.com/forms/d/e/1FAIpQLScHvk03Mk24U4MId4daPrJSC5nzlaWyJOLu5cKGKTDC0mjOKQ/viewform">here</a></strong>
+      </div>
+      <div class="col-6">
+        <ul class="list-group">
+          <li class="list-group-item">Spend 2-3 hours on weekends or day offs</li>
+          <li class="list-group-item">Share what you know in Creative Ways</li>
+          <li class="list-group-item">Allotment of classes based on availability</li>
+          <li class="list-group-item">Get to know awesome people</li>
+          <li class="list-group-item">Become a mentor by sharing career experiences</li>
+          <li class="list-group-item">Become a part of a learning community</li>
+          <li class="list-group-item">Are you part of a dream company? Find your future colleagues.</li>
+          <li class="list-group-item">At the end of the day earn the feel of having achieved something great!</li>
+        </ul>
+      </div>
+      </div>
+    </section>
+
+    <section id="section5" class="animated page-sz container st-content section">
+      <div class="row">
+      <div class="col-12">
+        <h1 class="webfont">Hunt Talent !</h1>
+      </div>
+      <div class="col-lg-12">
+        <p class="text-justify"><strong>Are you a startup looking for interns and employees?</strong> Code Chennai aims to equip people with coding and we are now engaged with teaching coding for beginners and making them startup ready. Enroll with us to train people specific to your venture. We aim at creating interns and employees with quality.Code Chennai also does the job of talent hunt where we hunt for awesome people to hire!</p>
+        <p class="text-justify"><strong>Are you an individual looking for people to work on small projects?</strong> Want to create websites or app or something else for your business? This is the right place!</p>
+        <strong>Register here for better hunting!</strong>
+      </div>
+      <div class="col-6">
+        <ul class="list-group">
+          <li class="list-group-item">Create future interns and employees by collaborating with us!</li>
+          <li class="list-group-item">Flaunt about your workspace culture and attract talent.</li>
+          <li class="list-group-item">Opt for a company specific training.</li>
+          <li class="list-group-item">Mentor students and inspire them</li>
+          <li class="list-group-item">Conduct hackathons and competitions</li>
+          <li class="list-group-item">Be part of improving employability</li>
+          <li class="list-group-item">Reduce the training cost</li>
+        </ul>
+      </div>
+      </div>
+    </section>
+
+    <section id="section6" class="animated page-sz container st-content section">
+      <div class="row">
+      <div class="col-12">
+        <h1 class="webfont">Courses</h1>
+      </div>
+      <div class="col-lg-12">
+        <p class="text-justify">We do not believe in a one fit all rigid syllabus. We offer <strong>personalized teaching</strong> to individuals and help them explore their interests in the vast ocean of technology! However we have a course that is structured at making you equiped with the fundamentals and important techs. The following course plan is a tentative one* and may subject to change. We are also open to teaching courses on request!</p>
+      </div>
+      <div class="col-lg-12">
+        <div class="card-columns">
+          <div class="card">
+          <h4 class="card-header">Python</h4>
+            <div class="card-block">
+            <p class="card-text">Intermediate</p>
+            </div>
+          </div>
+          <div class="card">
+          <h4 class="card-header">PHP</h4>
+            <div class="card-block">
+              <p class="card-text">Basics</p>
+            </div>
+          </div>
+          <div class="card">
+          <h4 class="card-header">HTML5</h4>
+            <div class="card-block">
+              <p class="card-text">Basics with introduction to commonly used frameworks like Bootstrap and JQuery</p>
+            </div>
+          </div>
+          <div class="card">
+          <h4 class="card-header">Introduction to Android Application Development</h4>
+            <div class="card-block">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.<p>
+            </div>
+          </div>
+          <div class="card">
+          <h4 class="card-header">Introduction to Data Structures and Algorithms</h4>
+            <div class="card-block">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+          <div class="card">
+          <h4 class="card-header">Introduction to famous web frameworks</h4>
+            <div class="card-block">
+              <p class="card-text">Django, Flask, etc.</p>
+            </div>
+          </div>
+          <div class="card">
+          <h4 class="card-header">Introduction to DBMS with SQL and NoSQL databases</h4>
+            <div class="card-block">
+              <p class="card-text">Django, Flask, etc.</p>
+            </div>
+          </div>
+          <div class="card">
+          <h4 class="card-header">Java</h4>
+            <div class="card-block">
+              <p class="card-text">Basics</p>
+            </div>
+          </div>
+          <div class="card">
+          <h4 class="card-header">C/C++</h4>
+            <div class="card-block">
+              <p class="card-text">Basics</p>
+            </div>
+          </div>
+          <div class="card">
+          <h4 class="card-header">Approach to Prototyping Applications</h4>
+            <div class="card-block">
+              <p class="card-text">Basics</p>
+            </div>
+          </div>
+          <div class="card">
+          <h4 class="card-header">Introduction to Internet of Things</h4>
+            <div class="card-block">
+              <p class="card-text">Basics</p>
+            </div>
+          </div>
+          <div class="card">
+          <h4 class="card-header">Systematic Design and Approach towards programming</h4>
+            <div class="card-block">
+              <p class="card-text">Basics</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="section7" class="animated page-sz container st-content section">
+      <div class="row">
+      <div class="col-12">
+        <h1 class="webfont">Colleges</h1>
+      </div>
+      <div class="col-lg-12">
+        <p class="text-justify"><strong>Want to enrich your students?</strong> Code Chennai conducts awesome hands-on workshops in colleges at a very low price. </p>
+        <p class="text-justify">We are also open to conducting regular classes on request.</p>
+        <strong>Register for workshops <a href="https://docs.google.com/forms/d/e/1FAIpQLSfouiGfo3gNIV954XBTsw0D582HFpSTh57l4liM-8_PlEAUgA/viewform">here</a></strong>
+      </div>
+      <div class="col-6">
+        <ul class="list-group">
+          <li class="list-group-item">Programming in Python</li>
+          <li class="list-group-item">Approach to Prototyping Applications</li>
+          <li class="list-group-item">HTML5 (Basics with introduction to commonly used frameworks like Bootstrap and JQuery)</li>
+          <li class="list-group-item">Introduction to Android Application Development</li>
+          <li class="list-group-item">Conduct hackathons and competitions</li>
+          <li class="list-group-item">Introduction to famous web frameworks (Django, Flask, etc.)</li>
+          <li class="list-group-item">Introduction to Internet of Things - Raspberry Pi, Arduino</li>
+          <li class="list-group-item">Startup culture and why to work in a startup</li>
+
+        </ul>
+      </div>
+      </div>
+    </section>
+
+    <section id="section8" class="animated page-sz container st-content section">
+      <div class="row">
+      <div class="col-12">
+        <h1 class="webfont">Upcoming Events</h1>
+      </div>
+      <div class="col-lg-12">
+        <h4>Uh oh!</h4>
+      </div>
+      <div class="col-lg-6">
+        <p class="text-justify">This means we are planning some cool events like working on science fiction products! Connect with us through these platforms and we'll update you!</p>
+      </div>
+      </div>
+    </section>
+
+    <section id="section9" class="animated page-sz container st-content section">
+      <div class="row">
+      <div class="col-12">
+        <h1 class="webfont">Free Class</h1>
+      </div>
+      <div class="col-lg-12">
+        <h4>Altrus</h4>
+      </div>
+      <div class="col-lg-6">
+        <p class="text-justify">Altrus is an upcoming non-profit organization that aims at improving the lives of people. Altrus as it's first step towards it's mission have collaborated with us to provide free coding classes for people who can't afford to pay. Connect with Altrus below.</p>
+        <strong>Know someone who can't afford? Tell about them <a href="https://docs.google.com/forms/d/e/1FAIpQLSeEiknZk6-PVKSkJ3iGMXwFF4qo2o9OKOcpNmc87uWAc_8P_g/viewform">here</a></strong>
+      </div>
+      <div class="col-12 social">
+          <a href="https://www.facebook.com/the.passion.network/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="mailto:altrusnetwork@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+      </div>
+      </div>
+    </section>
+    </div>
+
+    <!-- Modal -->
+<div class="modal fade" id="knowme" tabindex="-1" role="dialog" aria-labelledby="knowmeLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModal3Label">About this website.</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        This is demo site designed by Ajmal Hussain Hy.
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/vendors/scrolloverflow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
+
+
+    <script src="js/cc.js"></script>
+
+    <script type="text/javascript">
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+
+  </body>
 </html>
