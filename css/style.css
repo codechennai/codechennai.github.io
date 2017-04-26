@@ -130,7 +130,21 @@ color: rgba(0, 0, 0, 0.2);
 }
 
 .card {
-    color: #000;
+    background: #000;
+    color: #fff;
+    height: 20em;
+}
+
+.card-header{
+    background-color: #222;
+    color: yellow;
+}
+
+.carousel-control-prev{
+    left: 10em;
+}
+.carousel-control-next {
+    right: 10em;
 }
 
 #section7{

@@ -12,7 +12,7 @@ $(document).ready(function() {
 		scrollOverflow: true,
 		verticalCentered:false,
 
-        paddingTop: '3em'
+        paddingTop: '3.5rem'
 
   //       navigation: true,
 		// navigationPosition: 'right',
