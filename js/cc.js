@@ -9,7 +9,7 @@ $(document).ready(function() {
         scrollingSpeed: 1000,
         fitToSection: true,
 		fitToSectionDelay: 1000,
-		scrollOverflow: true,
+		scrollOverflow: false,
 		verticalCentered:false,
 
         paddingTop: '3.5rem'
