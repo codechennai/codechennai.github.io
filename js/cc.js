@@ -19,3 +19,17 @@ $(document).ready(function() {
 		
 	});
 });
+
+function writeJson(){
+	$.ajax({      
+        url: '/dataCollector.php',
+        data: {
+          "do":"panelRubricStore",
+        },
+        type: 'get',
+        success: function(response)
+        { 
+          window.alert(response);
+        }      
+    });
+}
