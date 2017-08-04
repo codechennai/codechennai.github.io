@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Coming+Soon');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.head{
+	/*display: table;
+    align-content: center;*/
+
+	height: 100%;
+	width: 100%;
+	background: url(../img/header1.png) no-repeat center right scroll;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    background-size: cover;
+	    -o-background-size: cover;
+	color: white;
+    display: table;
+    text-align: center;
+}
+
+.headover{
+	background: rgba(22, 177, 212, 0.80);
+	height: 100%;
+}
+
+.head h1{
+	top: 2em;
+}
+
+.middler{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 15%;
+}
+
+.circle{
+	border-radius: 50%;
+	height: 300px;
+	width: 300px;
+	background: rgba(22, 177, 212, 1);
+}
+
+.circle > img{
+	height: 100px;
+	margin-top: 3em;
+}
+
+.affix {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+/* fixed to top styles */
+/*.affix.navbar {
+  background-color: #fff;
+}*/
+/*.affix.navbar .nav-item>a,
+.affix.navbar .navbar-brand {
+    color: #222;
+}*/
+
+section{
+	font-family: 'Coming Soon', cursive;
+}
+
+.blackover{
+	background: rgba(0, 0, 0, 0.61);
+	height: 100%;
+}
+
+#about{
+	margin-top: 10em;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	/*margin-right: 100%;*/
+
+	/*background: url(../img/Kathipara.jpg) no-repeat center right scroll;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    background-size: cover;
+	    -o-background-size: cover;
+	    transform-origin: right bottom;
+    transform: skewY(-3deg);*/
+
+}
+
+#about p{
+	padding-top: 1em;
+	font-size: 30px;
+}
+
+#about > .container > .row > .bg{
+	padding-top: 2.2rem;
+		background: rgba(236, 217, 4, 1);
+	width: 500px;
+	height: 70px;
+	transform: skewY(-3deg);
+
+}
+
+#about2{
+	/*position: relative;*/
+	width: 100%;
+	margin-top: -80px;
+	height: 100%;
+	margin-left: 200%;
+	background: #fff;
+		-webkit-transition:background 1s;
+		-moz-transition:background 1s;
+		-o-transition:background 1s;
+		transition:background 1s
+}
+
+#about2 p{
+	/*padding-top: 1em;
+	font-size: 14px;*/
+	display: inline-block !important;
+}
+
+#about2 > .container > .row > .bg{
+	padding-top: 2.2rem;
+		background: rgba(236, 217, 4, 1);
+	width: 500px;
+	height: 70px;
+	transform: skewY(-3deg);
+
+}
+
+.topbar{
+	width: 100%;
+	/*margin-top: -80px;*/
+	height: 50px;
+	background: rgba(0, 0, 0, 0.61);
+}
+
+.pro-img{
+	height: 100;
+}
+
+/*#about > .container > .row > .bg > .fg{
+
+	border: rgba(236, 217, 4, 255) solid;
+	width: 500px;
+	height: 70px;
+}*/
+
+#class{
+	height: 100%;
+	margin-top: 10em;
+	background: url(../img/class.jpeg) no-repeat center right scroll;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    background-size: cover;
+	    -o-background-size: cover;
+	    color: white;
+}
+
+#class p{
+	padding-top: 1em;
+	font-size: 30px;
+}
+
+#class > .blackover > .container > .row > .bg{
+	padding-top: 2.2rem;
+		background: rgba(0, 208, 240, 1);
+	width: 500px;
+	height: 70px;
+	transform: skewY(-3deg);
+
+}
+
+#hunt{
+	height: 100%;
+	margin-top: 10em;
+}
+
+#hunt p{
+	padding-top: 1em;
+	font-size: 30px;
+}
+
+#hunt > .container > .row > .bg{
+	padding-top: 2.2rem;
+		background: rgba(4, 122, 0, 1);
+	width: 500px;
+	height: 70px;
+	transform: skewY(-3deg);
+
+}
+
+#coll{
+	height: 100%;
+	margin-top: 10em;
+}
+
+#coll p{
+	padding-top: 1em;
+	font-size: 30px;
+}
+
+#coll > .container > .row > .bg{
+	padding-top: 2.2rem;
+		background: rgba(236, 217, 4, 1);
+	width: 500px;
+	height: 70px;
+	transform: skewY(-3deg);
+
+}
