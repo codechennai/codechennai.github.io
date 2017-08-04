@@ -4,10 +4,12 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Code Chennai :: Increasing code population of india</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/cc.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
   <body>
 
@@ -65,13 +67,13 @@
 
         </dir>
           <p>Code Chennai is a new venture in the famous <strong>Chennai Maanagaram</strong>. You can learn to code without emptying your pockets here. The course will be a fun one where you can get your hands dirty by working on real life examples and cool projects. The focus of our venture is to equip you with the best possible in technology.</p>
-        <button type="button" id="about-btn" class="btn btn-outline-primary">Know More</button>
+        <button type="button" id="about-btn" class="btn btn-outline-primary">Our Team</button>
         </div>
       </div>
     </section>
 
     <section id="about2" >
-    <div class="topbar">123</div>
+    <div class="topbar"><a onclick="reverse();"><i class="fa fa-arrow-left fa-3x" aria-hidden="true"></i></a></div>
       <div class="container">
         <div class="row mb-5">
 
@@ -84,15 +86,38 @@
         </div> 
         <div class="row">
           <div class="col-6">
-            <img src="img/mk.jpg" class="img-thumbnail pro-img">
-            <div class="col-auto">
-              <p><strong>Mohana Krishnan S</strong><br>
-              Owner of this Startup<br>
-              Degree Holder<br>
-              Programmer</p> 
+            <div class="row">
+              <div class="col-4 pro-img"></div>
+              <div class="col-8">
+                <p><strong>Mohana Krishnan S</strong><br>
+                Owner of this Startup<br>
+                Degree Holder<br>
+                Programmer<br>
+                Mosamanavan kooda..!</p> 
+                <div>
+                  <a href="https://www.linkedin.com/in/smkrishna96/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-6">
+             <div class="row">
+              <div class="col-4 pro-img1"></div>
+              <div class="col-8">
+                <p><strong>Ajmal Hussain Hy</strong><br>
+                Classmate of Mk<br>
+                Degree Holder<br>
+                Programmerlan kedayathu<br>
+                intha site ah nanthan design pannan..!</p> 
+                <div>
+                  <a href="https://www.linkedin.com/in/ajmalhussainhy"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                  <a href="https://www.asathalmannan.gitlab.io"><i class="fa fa-edge fa-2x" aria-hidden="true"></i></a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-6"></div>
         </div>
         
       </div>
@@ -195,31 +220,6 @@
     </script>
 
     <script type="text/javascript">
-      // $(document).ready(function()
-      // {
-      //   var easing = 1 //enable or disable easing | 0 or 1
-      //   var easing_effect = 'easeOutBounce';
-      //   var animation_speed = 500 //ms
-            
-      //   var slider_width = $('#about').width();//get width automaticly
-      //   $('#about-btn').click(function() 
-      //   {
-      //     //check if slider is collapsed
-      //     var is_collapsed = $(this).css("margin-right") == slider_width+"%" && !$(this).is(':animated');
-            
-      //     //minus margin or positive margin
-      //     var sign = (is_collapsed) ? '-' : '+'; 
-          
-      //       if(!$(this).is(':animated')) //prevent double margin on double click
-      //       {
-      //         if(easing) $('.about2').animate({"margin-right": sign+'='+slider_width},animation_speed,easing_effect);
-      //         else $('.about2').animate({"margin-right": sign+'='+slider_width},animation_speed);
-      //       }
-      //      //if you need you can add class when expanded
-      //       // (is_collapsed) ? $('.willSlide').removeClass('expanded') : $('.willSlide').addClass('expanded');
-
-      //   });
-      // });
 
       $( '#about-btn' ).click(function() {
          $("#about, nav, header").animate({marginLeft: '-100%', width: '100vh'}, 1000);
@@ -229,8 +229,19 @@
 
                               },
                               1000,
-                              function(){ $("#about, #coll, #class, #hunt, header").hide();});
+                              function(){ $("#about, #coll, #class, #hunt, header").hide(500);});
       });
+
+      function reverse() {
+         $("#about, nav, header").animate({marginLeft: '0%', width: '100%'}, 1000);
+         $("#about2").animate({
+                      marginLeft: '100%',
+                      height: '100%'
+
+                              },
+                              1000,
+                              function(){ $("#about, #coll, #class, #hunt, header").show(1000);});
+      };
     </script>
   </body>
 </html>

@@ -146,13 +146,37 @@ section{
 
 .topbar{
 	width: 100%;
-	/*margin-top: -80px;*/
+	margin-top: -80px;
+	padding: 30px;
 	height: 50px;
-	background: rgba(0, 0, 0, 0.61);
+}
+
+.team-member{
+	height: 500px;
 }
 
 .pro-img{
-	height: 100;
+	background: url(../img/mk1.jpg) no-repeat top center;
+		-webkit-background-size: contain;
+	    -moz-background-size: contain;
+	    background-size: contain;
+	    -o-background-size: contain;
+	height: 200px;
+	border-radius: 10px;
+}
+
+.pro-img1{
+	background: url(../img/pro-pic.jpg) no-repeat top center;
+		-webkit-background-size: contain;
+	    -moz-background-size: contain;
+	    background-size: contain;
+	    -o-background-size: contain;
+	height: 200px;
+	border-radius: 10px;
+}
+
+.icon{
+	font-size: 10px;
 }
 
 /*#about > .container > .row > .bg > .fg{
