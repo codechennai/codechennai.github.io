@@ -99,6 +99,10 @@ html {
 	height: 5em;
 	filter: invert(100%);
 	opacity: 0.5;
+	-webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 .icon-down:hover{
@@ -106,10 +110,7 @@ html {
 	filter: invert(100%);*/
 	opacity: 1;
 	height: 6em;
-	-webkit-transition: 1s ease-in-out;
-    -moz-transition: 1s ease-in-out;
-    -o-transition: 1s ease-in-out;
-    transition: 1s ease-in-out;
+	
 }
 
 .affix {
