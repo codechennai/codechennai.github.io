@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Coming+Soon');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+
+@import url('https://fonts.googleapis.com/css?family=Merienda|Rancho');
+
+
 
 *{
   box-sizing: border-box;
@@ -29,10 +34,15 @@ html {
 	color: white;
     display: table;
     text-align: center;
+      -webkit-user-select: none;  
+	  -moz-user-select: none;    
+	  -ms-user-select: none;      
+	  user-select: none;
+
 }
 
 .headover{
-	background: rgba(22, 177, 212, 0.80);
+	background: rgba(0, 0, 0, 0.80);
 	height: 100%;
 }
 
@@ -44,19 +54,62 @@ html {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding-top: 15%;
+	padding-top: 10%;
 }
 
-.circle{
+/*.circle{
 	border-radius: 50%;
 	height: 300px;
 	width: 300px;
 	background: rgba(22, 177, 212, 1);
-}
+}*/
 
 .circle > img{
-	height: 100px;
+	height: 70px;
 	margin-top: 3em;
+	margin-bottom: 1em;
+}
+
+.circle > h1{
+	font-family: 'Merienda', cursive;
+
+}
+
+.head-para{
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 4em;
+}
+
+.btn-outline-header {
+	width: 8em;
+  color: #ddd;
+  background-image: none;
+  background-color: transparent;
+  border-color: #ddd;
+}
+
+.btn-outline-header:hover {
+  color: #000;
+  background-color: #fff;
+  border-color: #ddd;
+}
+
+
+.icon-down{
+	height: 5em;
+	filter: invert(100%);
+	opacity: 0.5;
+}
+
+.icon-down:hover{
+	/*height: 5em;
+	filter: invert(100%);*/
+	opacity: 1;
+	height: 6em;
+	-webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
 }
 
 .affix {
@@ -65,6 +118,19 @@ html {
   right: 0;
   left: 0;
   z-index: 1030;
+}
+
+.navbar-custom{
+	line-height: 1 !important;
+}
+
+.nav-brand-sub{
+	font-size: 14px;
+}
+
+.nav-brand-img{
+	vertical-align: top;
+	padding-top: 2 !important;
 }
 
 /* fixed to top styles */
