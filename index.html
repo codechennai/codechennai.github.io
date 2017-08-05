@@ -23,9 +23,9 @@
               <h1>&lt; code chennai &gt;</h1>
               <p class="head-para">Learn to code through Fun..</p>
               <p>Are you..</p>
-              <div class="d-inline"><a href="#student" class="btn btn-outline-header">Students</a></div>
-              <div class="d-inline"><a href="#freelan" class="btn btn-outline-header">Freelancers</a></div><br>
-              <a href="#about"><img src="img/chevron-thin-down.svg" alt="page down" class="icon-down mt-5"></a>
+              <div class="d-inline"><a href="#student" class="btn btn-outline-header page-scroll">Students</a></div>
+              <div class="d-inline"><a href="#freelan" class="btn btn-outline-header page-scroll">Freelancers</a></div><br>
+              <a href="#about" class=" page-scroll"><img src="img/chevron-thin-down.svg" alt="page down" class="icon-down mt-5"></a>
             </div>  
               
             
@@ -35,7 +35,7 @@
       
     </header>
 
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded navbar-custom" data-toggle="affix">
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded navbar-custom stick-top" data-toggle="affix">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navcontent" aria-controls="navcontent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -51,19 +51,19 @@
       <div class="collapse navbar-collapse" id="navcontent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link page-scroll" href="#home">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About Us</a>
+            <a class="nav-link page-scroll" href="#about">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#class">Classes</a>
+            <a class="nav-link page-scroll" href="#class">Classes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#hunt">Hunt Talent</a>
+            <a class="nav-link page-scroll" href="#hunt">Hunt Talent</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#coll">Colleges</a>
+            <a class="nav-link page-scroll" href="#coll">Colleges</a>
           </li>
         </ul>
       </div>
@@ -84,7 +84,8 @@
       </div>
     </section>
 
-    <section id="about2" >
+    <div id="about2" class="modal">
+    <div class="modal-body">
     <div class="topbar"><a onclick="reverse();"><i class="fa fa-arrow-left fa-3x" aria-hidden="true"></i></a></div>
       <div class="container">
         <div class="row mb-5">
@@ -133,7 +134,8 @@
         </div>
         
       </div>
-    </section>
+      </div>
+    </div>
 
     <section id="class">
       <div class="blackover">
@@ -197,7 +199,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
+        navbaralign();
+      });
 
+      function navbaralign(){
         var toggleAffix = function(affixElement, scrollElement, wrapper) {
         
           var height = affixElement.outerHeight(),
@@ -227,33 +232,65 @@
           // init
           toggleAffix(ele, $(window), wrapper);
         });
-        
-      });
+      };
     </script>
 
     <script type="text/javascript">
 
       $( '#about-btn' ).click(function() {
-         $("#about, nav, header").animate({marginLeft: '-100%', width: '100vh'}, 1000);
+         $("#about, nav, header, #coll, #class, #hunt, header").fadeOut(
+                      function(){ $("#about2").fadeIn(500)});
          $("#about2").animate({
+                      display: 'block',
                       marginLeft: '0%',
                       height: '100%'
 
                               },
-                              1000,
-                              function(){ $("#about, #coll, #class, #hunt, header").hide(500);});
-      });
-
+                              500);
+       });
+      //   $("nav").animate({
+      //     position: 'fixed'
+      //   });
+      // // ,
+                              // function(){ $("#about, #coll, #class, #hunt, header").fadeOut(500);}
+// {marginLeft: '0%', width: '100%'}, 1000,
       function reverse() {
-         $("#about, nav, header").animate({marginLeft: '0%', width: '100%'}, 1000);
+         $("#about2").fadeOut(
+                      function(){ $("#about, header, nav, #coll, #class, #hunt, header").fadeIn(500)});
+         navbaralign();
          $("#about2").animate({
+                      display: 'none',
                       marginLeft: '100%',
                       height: '100%'
 
                               },
-                              1000,
-                              function(){ $("#about, #coll, #class, #hunt, header").show(1000);});
+                              100);
+         // $("#about2").animate({
+         //              marginLeft: '0%',
+         //              height: '100%'
+
+         //                      },
+         //                      200);
       };
+    </script>
+    <script type="text/javascript">
+      // jQuery for page scrolling feature - requires jQuery Easing plugin
+      $(function() {
+          $('a.page-scroll').bind('click', function(event) {
+              var $anchor = $(this);
+              $('html, body').stop().animate({
+                  scrollTop: $($anchor.attr('href')).offset().top
+              }, 1500, 'easeInOutExpo');
+              event.preventDefault();
+          });
+      });
+
+      // Closes the Responsive Menu on Menu Item Click
+      $('.navbar-collapse ul li a').click(function() {
+        if ($(this).attr('class') != 'dropdown-toggle active' && $(this).attr('class') != 'dropdown-toggle') {
+          $('.navbar-toggle:visible').click();
+        }
+      });
     </script>
   </body>
 </html>

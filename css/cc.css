@@ -145,6 +145,7 @@ html {
 
 section{
 	font-family: 'Coming Soon', cursive;
+	height: 100%;
 }
 
 .blackover{
@@ -153,25 +154,16 @@ section{
 }
 
 #about{
-	margin-top: 10em;
 	width: 100%;
-	height: 100%;
-	position: absolute;
-	/*margin-right: 100%;*/
-
-	/*background: url(../img/Kathipara.jpg) no-repeat center right scroll;
-	    -webkit-background-size: cover;
-	    -moz-background-size: cover;
-	    background-size: cover;
-	    -o-background-size: cover;
-	    transform-origin: right bottom;
-    transform: skewY(-3deg);*/
-
+	position: relative;
 }
 
 #about p{
 	padding-top: 1em;
 	font-size: 30px;
+}
+#about > .container > .row{
+	padding-top: 5em;
 }
 
 #about > .container > .row > .bg{
@@ -185,10 +177,12 @@ section{
 
 #about2{
 	/*position: relative;*/
+	display: none;
 	width: 100%;
-	margin-top: -80px;
+	/*margin-top: 80px;*/
 	height: 100%;
 	margin-left: 200%;
+	z-index: 999;
 	background: #fff;
 		-webkit-transition:background 1s;
 		-moz-transition:background 1s;
@@ -213,7 +207,6 @@ section{
 
 .topbar{
 	width: 100%;
-	margin-top: -80px;
 	padding: 30px;
 	height: 50px;
 }
@@ -254,8 +247,7 @@ section{
 }*/
 
 #class{
-	height: 100%;
-	margin-top: 10em;
+	position: relative;
 	background: url(../img/class.jpeg) no-repeat center right scroll;
 	    -webkit-background-size: cover;
 	    -moz-background-size: cover;
@@ -269,6 +261,10 @@ section{
 	font-size: 30px;
 }
 
+#class > .blackover > .container > .row{
+	padding-top: 5em;
+}
+
 #class > .blackover > .container > .row > .bg{
 	padding-top: 2.2rem;
 		background: rgba(0, 208, 240, 1);
@@ -279,14 +275,19 @@ section{
 }
 
 #hunt{
-	height: 100%;
-	margin-top: 10em;
+	/*height: 100%;*/
+	position: relative;
 }
 
 #hunt p{
 	padding-top: 1em;
 	font-size: 30px;
 }
+
+#hunt > .container > .row{
+	padding-top: 5em;
+}
+
 
 #hunt > .container > .row > .bg{
 	padding-top: 2.2rem;
@@ -298,13 +299,17 @@ section{
 }
 
 #coll{
-	height: 100%;
-	margin-top: 10em;
+	/*height: 100%;*/
+	position: relative;
 }
 
 #coll p{
 	padding-top: 1em;
 	font-size: 30px;
+}
+
+#coll > .container > .row{
+	padding-top: 5em;
 }
 
 #coll > .container > .row > .bg{
